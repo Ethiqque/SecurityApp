@@ -1,4 +1,4 @@
-package com.ethiqque.springcourse.FirstSecurityApp.service;
+package com.ethiqque.springcourse.FirstSecurityApp.services;
 
 import com.ethiqque.springcourse.FirstSecurityApp.models.Person;
 import com.ethiqque.springcourse.FirstSecurityApp.repositories.PeopleRepository;
@@ -22,6 +22,7 @@ public class RegistrationService {
     @Transactional
     public void register(Person person){
         person.setPassword(passwordEncoder.encode(person.getPassword()));
+        person.setRole("ROLE_USER");
         peopleRepository.save(person);
     }
 }

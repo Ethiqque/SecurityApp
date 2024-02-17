@@ -1,7 +1,7 @@
 package com.ethiqque.springcourse.FirstSecurityApp.controllers;
 
 import com.ethiqque.springcourse.FirstSecurityApp.models.Person;
-import com.ethiqque.springcourse.FirstSecurityApp.service.RegistrationService;
+import com.ethiqque.springcourse.FirstSecurityApp.services.RegistrationService;
 import com.ethiqque.springcourse.FirstSecurityApp.util.PersonValidator;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
